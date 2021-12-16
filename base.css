@@ -1,12 +1,31 @@
+html {
+	scroll-behavior: smooth;
+}
 :root {
 	--main-color: #ab393e;
 	--main-light: #eeefef;
+	--hover-link: #318529;
 	--accent-color: #318529;
 	--accent-text: #1f8eee;
 	--off-text: #b0adaf;
 	--main-font: "Montserrat";
 	--headings-font: "Antic";
 	--handwritten-font: "Parisienne";
+}
+
+.desktop {
+	display: none;
+}
+.mobile {
+	display: block;
+}
+@media only screen and (min-width: 992px) {
+	.desktop {
+		display: block;
+	}
+	.mobile {
+		display: none;
+	}
 }
 
 body {
@@ -17,6 +36,12 @@ body {
 
 .container {
 	padding: 0 25px;
+}
+
+@media only screen and (min-width: 992px) {
+	.container {
+		padding: 0 165px;
+	}
 }
 
 .section-image {
@@ -35,7 +60,16 @@ a.no-style {
 }
 
 a.no-style:hover {
+	color: var(--hover-link);
+}
+
+a.no-hover:hover {
+	color: inherit;
+}
+
+a.nav-link {
 	color: var(--main-color);
+	font-size: 20px;
 }
 
 button {
@@ -49,6 +83,7 @@ button {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	max-width: 350px;
 }
 
 button:hover {
@@ -90,8 +125,25 @@ button.ghost.light:hover {
 	color: var(--main-color);
 }
 
+button.ghost.accent {
+	background-color: transparent;
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+button.ghost.accent:hover {
+	background-color: var(--accent-color);
+	color: var(--main-light);
+}
+
 h1 {
 	font-size: 42px;
 	font-weight: bold;
 	font-family: var(--main-font), sans-serif;
+}
+@media only screen and (min-width: 992px) {
+	h1 {
+		font-size: 80px;
+		margin-bottom: 55px;
+	}
 }

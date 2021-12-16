@@ -16,90 +16,184 @@
 		<link rel="stylesheet" href="homepage.css" />
 	</head>
 	<body>
-		<header class="container main-header">
+		<header class="container main-header nav-link">
 			<nav>
-				<img
-					src="./images/pickwick-leaf-logo.png"
-					alt="A logo with text and a leaf behind"
-				/>
-				<img
-					src="./images/smirnoff-logo.svg"
-					alt="A handwritten text saying Smirnoff"
-				/>
-			</nav>
-			<h1 class="hero-heading">
-				Best <span class="blue-text">winter</span> drink
-				<br />
-				on the market
-			</h1>
-			<button class="ghost">Experience yourself</button>
-		</header>
-		<main>
-			<section class="about container">
-				<h1>About our collaboration</h1>
-
-				<img
-					src="./images/vodka-tea-image.jpg"
-					alt="An image of two tea cups and a bottle of vodka"
-					class="section-image"
-				/>
-				<div class="logos">
-					<a class="pickwick" href="https://www.pickwick.dk/">
+				<a href="#recipes" class="no-style desktop nav-link">Our recipes</a>
+				<div class="nav-logos">
+					<a href="https://www.pickwicktea.com/">
 						<img
-							src="./images/pickwick-logo.png"
-							alt="A logo saying Pickwick"
+							src="./images/pickwick-leaf-logo.png"
+							alt="A logo with text and a leaf behind"
 						/>
 					</a>
-
-					<span class="apersand">&</span>
-
-					<a class="smirnoff" href="https://www.smirnoff.com/en-row/">
+					<a href="https://www.smirnoff.com/en-gb/">
 						<img
-							src="./images/smirnoff-logo-white.svg"
+							src="./images/smirnoff-logo.svg"
 							alt="A handwritten text saying Smirnoff"
 						/>
 					</a>
 				</div>
-				<article class="content">
-					<p>
-						Us at <a href="https://www.pickwick.dk/">Pickwick</a> and
-						<a href="https://www.smirnoff.com/en-row/">Smirnoff</a> decided to
-						collaborate to create a combination you might have never thought of
-						before. Tea and vodka might sound crazy to some of you, but we
-						assure you that you would be an incredible experience if you decide
-						to try it. We aggregated the best recipes for you
-					</p>
-					<button class="ghost light recipes-button">
-						<a class="no-style" href="#recipes">Check out the recipes</a>
-					</button>
-				</article>
-			</section>
-			<section class="recipes container">
-				<h1>Our recipes</h1>
-				<section class="recipe">
+				<a href="#deal" class="no-style desktop nav-link">Limitied Specials</a>
+			</nav>
+			<h1 class="hero-heading mobile">
+				Best <span class="blue-text">winter</span> drink
+				<br />
+				on the market
+			</h1>
+			<h1 class="hero-heading desktop">
+				Best <span class="blue-text">winter</span> drink
+				<br />
+				on the
+				<br />
+				market
+			</h1>
+			<button class="ghost accent">
+				<a class="no-style no-hover" href="#recipes">Experience yourself</a>
+			</button>
+		</header>
+		<main>
+			<section class="about container">
+				<h1>About our collaboration</h1>
+				<section class="main">
 					<img
-						src="./images/recipe-image.svg"
-						alt="An image of two tea cups full with tea decorated with cinnamon sticks and lemons"
+						src="./images/vodka-tea-image.jpg"
+						alt="An image of two tea cups and a bottle of vodka"
 						class="section-image"
 					/>
-					<section class="recipe-text">
-						<h2>Spiked cinnamon tea</h2>
-						<ul>
-							<li>90ml boiling water</li>
-							<li>1 teabag of Warm Cinnamon Pickwick tea</li>
-							<li>30ml of Smirnoff Vodka</li>
-						</ul>
+					<section class="info">
+						<div class="logos">
+							<a class="pickwick" href="https://www.pickwick.dk/">
+								<img
+									src="./images/pickwick-logo.png"
+									alt="A logo saying Pickwick"
+								/>
+							</a>
+
+							<span class="apersand">&</span>
+
+							<a class="smirnoff" href="https://www.smirnoff.com/en-row/">
+								<img
+									src="./images/smirnoff-logo-white.svg"
+									alt="A handwritten text saying Smirnoff"
+								/>
+							</a>
+						</div>
+						<article class="content">
+							<p>
+								Us at <a href="https://www.pickwick.dk/">Pickwick</a> and
+								<a href="https://www.smirnoff.com/en-row/">Smirnoff</a> decided
+								to collaborate to create a combination you might have never
+								thought of before.
+							</p>
+							<p>
+								Tea and vodka might sound crazy to some of you, but we assure
+								you that you would be an incredible experience if you decide to
+								try it.
+							</p>
+							<p>We aggregated the best recipes for you</p>
+							<button class="ghost light recipes-button">
+								<a class="no-style" href="#recipes">Check out the recipes</a>
+							</button>
+						</article>
 					</section>
-					<div class="dots">
-						<div class="dot"></div>
-						<div class="dot"></div>
-						<div class="dot active"></div>
-					</div>
+				</section>
+			</section>
+			<section id="recipes" class="recipes container">
+				<h1>Our recipes</h1>
+				<section class="recipes-content">
+					<section class="recipe featured">
+						<img
+							src="./images/recipe-image.svg"
+							alt="An image of two tea cups full with tea decorated with cinnamon sticks and lemons"
+							class="section-image"
+						/>
+						<section class="recipe-text">
+							<h2>Spiked cinnamon tea</h2>
+							<ul>
+								<li>90ml boiling water</li>
+								<li>1 teabag of Warm Cinnamon Pickwick tea</li>
+								<li>30ml of Smirnoff Vodka</li>
+							</ul>
+						</section>
+						<div class="dots mobile">
+							<div class="dot"></div>
+							<div class="dot"></div>
+							<div class="dot active"></div>
+						</div>
+					</section>
+					<section class="secondary-recipes desktop">
+						<section class="recipe">
+							<img
+								src="./images/toddy-image.png"
+								alt="An image of two tea cups full with tea decorated with cinnamon sticks and lemons"
+								class="section-image"
+							/>
+							<section class="recipe-text">
+								<h2>Vodka toddy</h2>
+								<ul>
+									<li>90ml boiling water</li>
+									<li>1 teabag of Lemon Pickwick tea</li>
+									<li>30ml of Smirnoff Vodka</li>
+								</ul>
+							</section>
+							<div class="dots mobile">
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot active"></div>
+							</div>
+						</section>
+						<section class="recipe">
+							<img
+								src="./images/moro-image.png"
+								alt="An image of two tea cups full with tea decorated with cinnamon sticks and lemons"
+								class="section-image"
+							/>
+							<section class="recipe-text">
+								<h2>Moroccan Etiquette</h2>
+								<ul>
+									<li>90ml boiling water</li>
+									<li>1 teabag of Mint Pickwick tea</li>
+									<li>30ml of Smirnoff Vodka</li>
+									<li>10ml of Yellow Chartreuse</li>
+								</ul>
+							</section>
+							<div class="dots mobile">
+								<div class="dot"></div>
+								<div class="dot"></div>
+								<div class="dot active"></div>
+							</div>
+						</section>
+					</section>
 				</section>
 			</section>
 			<section class="deal">
 				<img src="./images/wave.svg" alt="Wavy image" class="wave top-wave" />
-				<section class="content container">
+				<section id="deal" class="content container">
+					<img
+						class="big snowflake"
+						src="./images/snowflake.svg"
+						alt="An image of a snowflake"
+					/>
+					<img
+						class="medium snowflake"
+						src="./images/snowflake.svg"
+						alt="An image of a snowflake"
+					/>
+					<img
+						class="medium-2 snowflake"
+						src="./images/snowflake.svg"
+						alt="An image of a snowflake"
+					/>
+					<img
+						class="small snowflake"
+						src="./images/snowflake.svg"
+						alt="An image of a snowflake"
+					/>
+					<img
+						class="very-small snowflake"
+						src="./images/snowflake.svg"
+						alt="An image of a snowflake"
+					/>
 					<h1>OUR CHRISTMAS DEAL</h1>
 					<section class="deal-contents">
 						<div class="smirnoff-box">
@@ -118,12 +212,14 @@
 							/>
 						</div>
 					</section>
-					<section class="text-content">
-						<p>
+					<section class="text-btn">
+						<p class="deal-text">
 							Warm yourself up now with our special limited
 							<strong>Christmas deal!</strong>
 						</p>
-						<button class="ghost">Experience yourself</button>
+						<button class="ghost accent">Check it out now</button>
+					</section>
+					<section class="text-content">
 						<p class="expires-text">Expires in:</p>
 						<p class="time-text">23:55:14</p>
 					</section>
@@ -154,7 +250,7 @@
 			</section>
 			<p class="copyright">&copy; Pickwick, Inc.</p>
 			<section class="sources">
-				<p>Photos and logos taken from</p>
+				<p class="mobile">Photos and logos taken from</p>
 				<div class="first">smirnoff.com pickwick.com</div>
 				<div class="second">fontawesome.com unsplash.com</div>
 				<div class="third">pexels.com</div>
