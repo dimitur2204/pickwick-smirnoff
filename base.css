@@ -34,10 +34,6 @@ body {
 	background-color: var(--main-color);
 }
 
-.container {
-	padding: 0 25px;
-}
-
 @media only screen and (min-width: 992px) {
 	.container {
 		padding: 0 165px;
@@ -46,6 +42,10 @@ body {
 
 .section-image {
 	width: 100%;
+}
+
+.container {
+	padding: 0 25px;
 }
 
 a {
